@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ff42077-688d-4175-a239-812ecad29bd9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZR0Emc1pkmpKY9BmJB0jH57Xwb" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ressources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.api">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="corona_ai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="corona_ai" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="corona_ai" type="Python.FlaskServer">
+      <module name="corona_ai" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.api" />
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ff42077-688d-4175-a239-812ecad29bd9" name="Default Changelist" comment="" />
+      <created>1584786489354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584786489354</updated>
+      <workItem from="1584786503293" duration="7343000" />
+      <workItem from="1584811873821" duration="2609000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584787012568">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584787012568" />
+    <state x="217" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584809910760">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="217" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584809910760" />
+    <state width="1349" height="304" key="GridCell.Tab.0.bottom" timestamp="1584814684937">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state width="916" height="304" key="GridCell.Tab.0.bottom/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584813625346" />
+    <state width="1349" height="304" key="GridCell.Tab.0.bottom/1920.143.1440.877/0.23.1920.993@0.23.1920.993" timestamp="1584814684937" />
+    <state width="1349" height="304" key="GridCell.Tab.0.center" timestamp="1584814684937">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state width="916" height="304" key="GridCell.Tab.0.center/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584813625344" />
+    <state width="1349" height="304" key="GridCell.Tab.0.center/1920.143.1440.877/0.23.1920.993@0.23.1920.993" timestamp="1584814684937" />
+    <state width="1349" height="304" key="GridCell.Tab.0.left" timestamp="1584814684936">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state width="916" height="304" key="GridCell.Tab.0.left/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584813625343" />
+    <state width="1349" height="304" key="GridCell.Tab.0.left/1920.143.1440.877/0.23.1920.993@0.23.1920.993" timestamp="1584814684936" />
+    <state width="1349" height="304" key="GridCell.Tab.0.right" timestamp="1584814684937">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state width="916" height="304" key="GridCell.Tab.0.right/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584813625345" />
+    <state width="1349" height="304" key="GridCell.Tab.0.right/1920.143.1440.877/0.23.1920.993@0.23.1920.993" timestamp="1584814684937" />
+    <state x="0" y="261" key="IDE.errors.dialog" timestamp="1584793086346">
+      <screen x="0" y="23" width="1920" height="993" />
+    </state>
+    <state x="0" y="261" key="IDE.errors.dialog/1920.143.1440.877/0.23.1920.993@0.23.1920.993" timestamp="1584793086346" />
+    <state x="0" y="179" key="SettingsEditor" timestamp="1584811807887">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="179" key="SettingsEditor/1920.120.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1584811807887" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/corona_ai$api.coverage" NAME="api Coverage Results" MODIFIED="1584811019056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corona_ai$corona_ai.coverage" NAME="corona_ai Coverage Results" MODIFIED="1584807164424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/coronachecker_api$api.coverage" NAME="api Coverage Results" MODIFIED="1584814503427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corona_ai$run.coverage" NAME="run Coverage Results" MODIFIED="1584809790328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
