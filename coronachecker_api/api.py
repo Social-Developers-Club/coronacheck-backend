@@ -15,7 +15,7 @@ class CoronaChecker(Resource):
         args = parser.parse_args()
         url_id = int(max(URLS.keys())+1)
         url_id = '%i' % url_id
-        URLS[url_id] = {"URL": args['Url']}
+        URLS[url_id] = {"URL": args["URL"]}
 
         return URLS[url_id]
 
