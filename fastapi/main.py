@@ -11,6 +11,8 @@ def read_root():
 def read_twitter(url: str, hash_tag: str =None):
     return {'url': url, 'hash_tag': hash_tag}
 
+
+
 @app.get("/classification/")
 def classification_result():
     return {'label': label, 'confidence': confidence}
