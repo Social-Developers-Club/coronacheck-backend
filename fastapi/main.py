@@ -1,8 +1,9 @@
-from fastapi import FastAPI
-
-from twitter import Get_tweets
-
+import requests
+import json
 import pandas as pd
+
+from fastapi import FastAPI
+from twitter import Get_tweets
 
 app = FastAPI()
 
@@ -12,31 +13,25 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/twitter_post/{url}")
-def read_twitter(url: str, hash_tag: str =None):
-    TWEET_ID = url.split(sep='/')[-1:]
+@app.get("/twitter_post/{id_}")
+def read_twitter(id_: str):
+
+    #TWEET_ID = url #url.split(sep='/')[-1:]
+    tweet_id = dict({'id':id_})
 
     CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET = read_credentials()
     
-    get_tweets = Get_tweets(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET, TWEET_ID)
+    get_tweets = Get_tweets(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET, id_)
 
     text, created_at, geo, coordinates, place, retweet_count = get_tweets.json_tweet_filter()
 
+    result = model_request(json.dumps(dict({'test':text})))
 
-    return {'text': text, 'created_at': created_at}
+    # TODO: add locations as extra functions
+    print(tweet_id)
+    response_body = response(tweet_id, result)
 
-
-@app.get("/classification/")
-def classification_result():
-    return {'label': label, 'confidence': confidence}
-
-@app.get("/evidence/")
-def classification_result():
-    return {'source_id': source_id, 'source_text': source_text}
-
-@app.get("/classification/")
-def classification_result():
-    return {'hash_tag': hash_tag, 'geo': geo}
+    return json.dumps(response_body)
 
 
 def read_credentials():
@@ -48,3 +43,38 @@ def read_credentials():
     ACCESS_SECRET = df.ACCESS_SECRET.values[0]
 
     return CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN, ACCESS_SECRET
+
+def model_request(payload):
+    # TODO: real get!
+    headers = {'Content-type': 'application/json'}
+    r = requests.post('http://185.244.195.79:8000/api/analyze', data=payload, headers=headers)
+    data = r.json()
+
+    return data
+
+def response(tweet_id, result):
+    # TODO: real location
+    test_dict = {"derived": {
+      "locations": [
+        {
+          "country": "Deutschland",
+          "country_code": "DE",
+          "locality": "Deutschland",
+          "region": "Bundesland",
+          "sub_region": "Landkreis",
+          "full_name": "Heinsberg, Kreis Heinsberg, Nordrhein-Westfalen, 52525, Deutschland",
+          "geo": {
+            "coordinates": [
+              51.0654268,
+              6.0984461
+            ],
+            "type": "point"
+          }
+        }
+      ]
+    }
+    }
+    tweet_id.update(result)
+    tweet_id.update(test_dict)
+    return tweet_id
+
