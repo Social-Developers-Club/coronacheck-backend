@@ -45,7 +45,7 @@ def read_credentials():
     return CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN, ACCESS_SECRET
 
 def model_request(payload):
-    # TODO: real get!
+
     headers = {'Content-type': 'application/json'}
     r = requests.post('http://185.244.195.79:8000/api/analyze', data=payload, headers=headers)
     data = r.json()
