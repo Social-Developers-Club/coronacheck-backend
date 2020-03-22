@@ -2,3 +2,7 @@
 notebook/webscrapping/.ipynb_checkpoints/
 
 notebook/webscrapping/notebooks.ipynb
+
+.idea/
+
+fastapi/__pycache__/
