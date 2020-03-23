@@ -10,3 +10,5 @@ fastapi/__pycache__/
 notebook/webscrapping/Untitled.ipynb
 
 data/ml_test.json
+
+twitter_access/
