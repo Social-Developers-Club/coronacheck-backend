@@ -1,11 +1,22 @@
 import requests
 import json
+import os
+import uvicorn
 import pandas as pd
 
 from fastapi import FastAPI
 from twitter import Get_tweets
 
 app = FastAPI()
+
+if __name__ == "__main__":
+    port = os.getenv("PORT", 8000)
+    host = os.getenv("HOST", "0.0.0.0")
+    CONSUMER_KEY = os.getenv("CONSUMER_KEY")
+    CONSUMER_SECRET = os.getenv("CONSUMER_SECRET")
+    ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+    ACCESS_SECRET = os.getenv("ACCESS_SECRET")
+    uvicorn.run(app, host=host, port=port)
 
 
 @app.get("/")
@@ -34,7 +45,7 @@ def read_twitter(id_: str):
     return json.dumps(response_body)
 
 
-def read_credentials():
+"""def read_credentials():
     df = pd.read_csv('/Users/andang/Documents/workspace/wirvsvirus/twitter_access/twitter_access.csv')
 
     CONSUMER_KEY = df.CONSUMER_KEY.values[0]
@@ -42,7 +53,7 @@ def read_credentials():
     ACCESS_TOKEN = df.ACCESS_TOKEN.values[0]
     ACCESS_SECRET = df.ACCESS_SECRET.values[0]
 
-    return CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN, ACCESS_SECRET
+    return CONSUMER_KEY, CONSUMER_SECRET,ACCESS_TOKEN, ACCESS_SECRET"""
 
 def model_request(payload):
 
