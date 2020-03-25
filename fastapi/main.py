@@ -35,7 +35,7 @@ def read_twitter(id_: str):
     print(tweet_id)
     response_body = response(tweet_id, result)
 
-    return json.dumps(response_body)
+    return response_body
 
 
 """def read_credentials():
