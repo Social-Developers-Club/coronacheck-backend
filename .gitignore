@@ -1,2 +1,14 @@
 
 notebook/webscrapping/.ipynb_checkpoints/
+
+notebook/webscrapping/notebooks.ipynb
+
+.idea/
+
+fastapi/__pycache__/
+
+notebook/webscrapping/Untitled.ipynb
+
+data/ml_test.json
+
+twitter_access/
