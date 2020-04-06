@@ -7,17 +7,12 @@ import pandas as pd
 from fastapi import FastAPI
 from twitter import Get_tweets
 
+CONSUMER_KEY = os.getenv("CONSUMER_KEY")
+CONSUMER_SECRET = os.getenv("CONSUMER_SECRET")
+ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+ACCESS_SECRET = os.getenv("ACCESS_SECRET")
+
 app = FastAPI()
-
-if __name__ == "__main__":
-    port = os.getenv("PORT", 8000)
-    host = os.getenv("HOST", "0.0.0.0")
-    CONSUMER_KEY = os.getenv("CONSUMER_KEY")
-    CONSUMER_SECRET = os.getenv("CONSUMER_SECRET")
-    ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
-    ACCESS_SECRET = os.getenv("ACCESS_SECRET")
-    uvicorn.run(app, host=host, port=port)
-
 
 @app.get("/")
 def read_root():
@@ -30,19 +25,17 @@ def read_twitter(id_: str):
     #TWEET_ID = url #url.split(sep='/')[-1:]
     tweet_id = dict({'id':id_})
 
-    CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET = read_credentials()
-    
     get_tweets = Get_tweets(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_SECRET, id_)
 
     text, created_at, geo, coordinates, place, retweet_count = get_tweets.json_tweet_filter()
 
-    result = model_request(json.dumps(dict({'test':text})))
+    result = model_request(json.dumps(dict({'text':text})))
 
     # TODO: add locations as extra functions
     print(tweet_id)
     response_body = response(tweet_id, result)
 
-    return json.dumps(response_body)
+    return response_body
 
 
 """def read_credentials():
@@ -89,3 +82,8 @@ def response(tweet_id, result):
     tweet_id.update(test_dict)
     return tweet_id
 
+
+if __name__ == "__main__":
+    port = os.getenv("PORT", 8000)
+    host = os.getenv("HOST", "0.0.0.0")
+    uvicorn.run(app, host=host, port=port)
